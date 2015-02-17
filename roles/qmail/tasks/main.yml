@@ -206,7 +206,7 @@
   get_url:
     url=http://qmailrocks.thibs.com/downloads/deb-packages/mta-local_1.0_all.deb
     dest={{ qmail.source_dir }}
-    sha256sum=7525261ac5bfdb5b231b7f40066ad48cf698678cd5ffa896efc89afcf3f4b586
+    sha256sum=35708171b8f7bc67629e0871801318987d0b8fa2622b11fbb2167bfd859dd6ea
   tags: system
 
 - name: install local mta
