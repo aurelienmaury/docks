@@ -4,28 +4,11 @@
 #
 # init - Very first init
 #
-- name: update
-  command:
-    /usr/bin/apt-get update -y
-  tags: init
-
-- name: upgrade
-  command:
-    /usr/bin/apt-get upgrade -y
-  tags: init
-
-- name: install python-apt
-  command:
-    /usr/bin/apt-get install python-apt -y
-  tags: init
-
 - name: packages for me
   apt:
     pkg={{ item }}
     state=present
   with_items:
-    - emacs
-    - tmux
     - mailutils
   tags: init
 
